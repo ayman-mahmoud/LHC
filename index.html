@@ -70,10 +70,10 @@ LHC_API.args = {mode:'widget',lhc_base_url:'//beshara.livehelperchat.com/',wheig
 if (typeof lhc_var === 'undefined'){
         var lhc_var = {};
 };
-lhc_var.hosid = '8111162501';  
+lhc_var.hosid = urlParams.get('pHosID');  
  var LHCChatOptions = {};
 LHCChatOptions.attr = new Array();
-LHCChatOptions.attr.push({'name':'hosid22','value':lhc_var.hosid,'type':'text','size':6,'req':true});
+LHCChatOptions.attr.push({'name':'hosid22pHospID','value':lhc_var.hosid,'type':'text','size':6,'req':true});
 
 (function() {
 var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
