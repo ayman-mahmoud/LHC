@@ -74,8 +74,10 @@ lhc_var.hosid = 8111162501;
  var LHCChatOptions = {};
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('hostid');
+LHCChatOptionsPage.attr_prefill = new Array();
+LHCChatOptionsPage.attr_prefill.push({'name':'email','value':'remdex@gmail.com'});
 LHCChatOptions.attr = new Array();
-LHCChatOptions.attr.push({'name':'hosid9900','value':myParam,'type':'text','size':6,'req':true});
+LHCChatOptions.attr.push({'name':'hosid9999','value':myParam,'type':'text','size':6,'req':true});
   
 
 
