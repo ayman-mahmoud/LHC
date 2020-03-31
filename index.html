@@ -73,10 +73,12 @@ if (typeof lhc_var === 'undefined'){
 
  var LHCChatOptions = {};
 const urlParams = new URLSearchParams(window.location.search);
-const myParam = urlParams.get('hostid');
-lhc_var.javahosid = 900900;
+const personName = urlParams.get('usname');
+const civil = urlParams.get('uscivil');
+const personMail = urlParams.get('permail');
+const personPhone = urlParams.get('perphone');
 LHCChatOptions.attr = new Array();
-LHCChatOptions.attr.push({'name':'hosid1523','value':myParam,'type':'text','size':6,'req':true});
+LHCChatOptions.attr.push({'name':'hosid1636','value':myParam,'type':'text','size':6,'req':true});
   
 
 
@@ -87,10 +89,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po
 })();
 
 LHCChatOptions.attr_prefill = new Array();  
-LHCChatOptions.attr_prefill.push({'name':'email','value':'remdex@gmail.com','hidden':true});  
-LHCChatOptions.attr_prefill.push({'name':'phone','value':'370454654'});  
-LHCChatOptions.attr_prefill.push({'name':'username','value':'Username here'});  
-LHCChatOptions.attr_prefill.push({'name':'question','value':'Default user message'}); 
+LHCChatOptions.attr_prefill.push({'name':'email','value':personMail,'hidden':true});  
+LHCChatOptions.attr_prefill.push({'name':'phone','value':personPhone});  
+LHCChatOptions.attr_prefill.push({'name':'username','value':personName});  
 </script>
 </body>
 </html>
