@@ -80,7 +80,7 @@ const personMail = urlParams.get('permail');
 const personPhone = urlParams.get('perphone');
 
 LHCChatOptions.attr = new Array();
-LHCChatOptions.attr.push({'name':'hosid1641','value':"myParam",'type':'text','size':6,'req':true});
+LHCChatOptions.attr.push({'name':'hosid1644','value':"myParam",'type':'text','size':6,'req':true});
   
 
 
@@ -90,7 +90,10 @@ var date = new Date();po.src = '//beshara.livehelperchat.com/design/defaulttheme
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
 
-
+LHCChatOptions.attr_prefill = new Array();  
+LHCChatOptions.attr_prefill.push({'name':'email','value':personMail,'hidden':true});  
+LHCChatOptions.attr_prefill.push({'name':'phone','value':personPhone});  
+LHCChatOptions.attr_prefill.push({'name':'username','value':personName});  
 </script>
 </body>
 </html>
