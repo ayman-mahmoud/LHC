@@ -74,10 +74,10 @@ if (typeof lhc_var === 'undefined'){
  var LHCChatOptions = {};
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('hostid');
-var nameField = document.getElementsByName("Username");
-for (var i=0;i<nameField.length;i++) { 
-  nameField[i].value = myParam;
-}
+$(function() {
+    $("input[name='Username']").val("Ayman");
+});
+​
 lhc_var.javahosid = 900900;
 LHCChatOptions.attr = new Array();
 LHCChatOptions.attr.push({'name':'hosid1455','value':myParam,'type':'text','size':6,'req':true});
