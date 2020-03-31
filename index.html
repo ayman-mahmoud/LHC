@@ -74,8 +74,13 @@ if (typeof lhc_var === 'undefined'){
  var LHCChatOptions = {};
 const urlParams = new URLSearchParams(window.location.search);
 
+const personName = urlParams.get('usname');
+const civil = urlParams.get('uscivil');
+const personMail = urlParams.get('permail');
+const personPhone = urlParams.get('perphone');
+
 LHCChatOptions.attr = new Array();
-LHCChatOptions.attr.push({'name':'hosid1636','value':"myParam",'type':'text','size':6,'req':true});
+LHCChatOptions.attr.push({'name':'hosid1641','value':"myParam",'type':'text','size':6,'req':true});
   
 
 
