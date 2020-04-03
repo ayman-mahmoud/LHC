@@ -82,7 +82,7 @@ const personPhone = urlParams.get('perphone');
 lhc_var.jCivilID = civil;
 
 LHCChatOptions.attr = new Array();
-LHCChatOptions.attr.push({'name':'CivilID','value':civil,'type':'text','size':6,'req':true});
+LHCChatOptions.attr.push({'name':'الرقم المدني','value':civil,'type':'text','size':12,'req':true});
 
 (function() {
 var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -93,8 +93,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po
 LHCChatOptions.attr_prefill = new Array();  
 LHCChatOptions.attr_prefill.push({'name':'email','value':personMail,'hidden':true});  
 LHCChatOptions.attr_prefill.push({'name':'phone','value':personPhone});  
-LHCChatOptions.attr_prefill.push({'name':'username','value':personName});  
-LHCChatOptions.attr_prefill.push({'name':'txtCivilID','value':"5566655"});
+LHCChatOptions.attr_prefill.push({'name':'username','value':personName});
 
 </script>
 </body>
