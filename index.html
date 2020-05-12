@@ -66,28 +66,30 @@ iframe .col-12 {
 </div>
 
 <script>var LHC_API = LHC_API||{};
-LHC_API.args = {mode:'widget',lhc_base_url:'//beshara.livehelperchat.com/',wheight:450,wwidth:350,pheight:520,pwidth:500,leaveamessage:true,survey:2,lang:'ara/'};
+var LHCChatOptionsPage = {'height':300,'mobile':false};
+LHCChatOptionsPage.opt = {};
 if (typeof lhc_var === 'undefined'){
         var lhc_var = {};
 };
 
- var LHCChatOptions = {};
+var LHCChatOptions = {};
 const urlParams = new URLSearchParams(window.location.search);
 
-const personName = urlParams.get('usname');
-const civil = urlParams.get('uscivil');
-const personMail = urlParams.get('permail');
-const personPhone = urlParams.get('perphone');
+const personName = "Ayman";
+const civil = "28111160103894";
+const personMail = "ayman.mahmoud@gmail.com";
+const personPhone = "01023298989";
 
 lhc_var.jCivilID = civil;
-LHCChatOptions.attr = new Array();
-LHCChatOptions.attr.push({'name':'CivilID','value':civil,'type':'text','size':6,'req':true});
+
   
 
 
 (function() {
 var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-var date = new Date();po.src = '//beshara.livehelperchat.com/design/defaulttheme/js/widgetv2/index.js?'+(""+date.getFullYear() + date.getMonth() + date.getDate());
+var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
+var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
+po.src = '//192.168.0.90/besharasmartsupport/lhc_web/index.php/ara/chat/getstatusembed/(department)/12?r='+referrer;
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
 
